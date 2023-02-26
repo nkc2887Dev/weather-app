@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="../public/image/3366845.jpg" type="image/jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .bgSet {
+            background: url(../image/SL_042221_42420_02.jpg)no-repeat center center/cover;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="bgSet">
+        {{>navbar}}
+        <div class="row container mx-auto py-5">
+            <div class="col-md-6 col-12 mx-auto m-auto">
+                <div class="d-flex flex-column">
+                    <p>Welcome to Weather App</p>
+                    <h1>Get the Latest <span class="text-primary">Weather</span> Info of Your City</h1>
+                    <button href="/weather" class="btn btn-primary rounded-50 my-4 mr-auto" id="checkNow">Check
+                        Now</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 mx-auto">
+                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="3000">
+                            <img src="../../public/image/Weather-bro.png" class="d-block img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <img src="../../public/image/Weather-pana.png" class="d-block img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <img src="../../public/image/Weather-rafiki.png" class="d-block img-fluid" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <script src="../../public/js/script.js"></script>
+</body>
+
+</html>
